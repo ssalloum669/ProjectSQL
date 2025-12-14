@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataBaseTesting.CRUD">
+      <class name="DataBaseTesting.AutomationTestStore">
         <methods>
-          <include name="ReadTheDataInsideTheBrowser"/>
+          <include name="ThisShouldExecuteBeforeEveryTest"/>
           <include name="AutomationSetup"/>
+          <include name="FillTheData"/>
         </methods>
-      </class> <!-- DataBaseTesting.CRUD -->
+      </class> <!-- DataBaseTesting.AutomationTestStore -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

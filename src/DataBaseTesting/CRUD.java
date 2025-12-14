@@ -13,8 +13,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.mysql.cj.x.protobuf.MysqlxCrud.Update;
-
 public class CRUD {
 	WebDriver driver=new ChromeDriver();
 	Connection con;
@@ -47,7 +45,7 @@ public class CRUD {
     	String Query="select* from customers where customerNumber=103";
     	stmt=con.createStatement();
     rs=	stmt.executeQuery(Query);
-    	System.out.println(rs);
+    //	System.out.println(rs);
     	while(rs.next()) {
     		FirstName=rs.getString("customerName");
     		LastName=rs.getString("contactLastName");	
